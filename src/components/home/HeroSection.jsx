@@ -11,7 +11,7 @@ const HeroSection = () => {
   useEffect(() => {
     gsap.fromTo(
       leftRef.current,
-      { x: -100, opacity: 0 },
+      { x: -100, opacity: 0 }, 
       { x: 0, opacity: 1, duration: 1.2, ease: 'power2.out' }
     );
 
