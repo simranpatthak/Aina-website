@@ -3,7 +3,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useSelector } from 'react-redux';
 import { gsap } from 'gsap';
-import { FaStar, FaStarHalfAlt, FaUsers, FaDownload } from 'react-icons/fa'; // 🔥 Added icons here!
+import { FaStar, FaStarHalfAlt, FaUsers, FaDownload } from 'react-icons/fa'; 
 
 const FeatureSection = () => {
   const controls = useAnimation();
@@ -36,7 +36,6 @@ const FeatureSection = () => {
     >
       <div ref={ref} className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-8">
         
-        {/* Left Card */}
         <motion.div
           initial="hidden"
           animate={controls}
@@ -49,7 +48,7 @@ const FeatureSection = () => {
         >
           <img src="/feature/thumb.png" alt="Like" className="w-12 h-12 mb-4" />
           <h3 className="text-xl font-bold mb-2 text-red-600 dark:text-red-400">What We Do?</h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">
+          <p className=" mb-4">
             Consectetur exercitat deserunt consectetur blanditiis, placeat.
           </p>
           <button className="text-red-600 dark:text-red-400 font-semibold hover:underline">
@@ -57,11 +56,7 @@ const FeatureSection = () => {
           </button>
           <img src="/happy-girl.png" alt="Girl" className="mt-auto w-full object-cover rounded-2xl" />
         </motion.div>
-
-        {/* Middle Cards */}
         <div className="flex flex-col gap-8 flex-1">
-
-          {/* Trusted Users Card */}
           <motion.div
             initial="hidden"
             animate={controls}
@@ -83,8 +78,6 @@ const FeatureSection = () => {
             <h2 className="text-3xl font-extrabold mb-2">25K+</h2>
             <p>Trusted Active Users</p>
           </motion.div>
-
-          {/* Star Rating Card */}
           <motion.div
             initial="hidden"
             animate={controls}
@@ -108,8 +101,6 @@ const FeatureSection = () => {
           </motion.div>
 
         </div>
-
-        {/* Download App Card */}
         <motion.div
           initial="hidden"
           animate={controls}
